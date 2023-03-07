@@ -1,0 +1,14 @@
+# Ignorar los archivos CSS generados
+*.css
+*.css.map
+*.docx
+
+# Ignorar los archivos JS generados
+*.js
+
+# Ignorar los archivos de caché de Sass
+*.sass-cache/
+
+# Ignorar los archivos de la carpeta node_modules
+/node_modules
+

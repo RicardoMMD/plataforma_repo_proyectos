@@ -1,0 +1,83 @@
+$text-general: 'Open Sans,Arial',sans-serif ; /*'Oxygen Mono', monospace*/
+
+.tarjetero{
+    /*background-color: #ffbea6;*/
+    border-radius: 5px;
+    font-family: $text-general;
+}
+.contenBody{
+    display: grid;
+    grid-template-columns: 180px auto;
+}
+.colFiltro{
+    /*background-color: beige;*/
+    display: flex;
+    flex-direction: column;
+    li::marker{
+        font-size: 23px;
+        content: "| ";
+        margin-right: 5px;
+    }
+}
+.descripcion{
+    /*background-color: #ffbea6;*/
+    margin: 1% 1%;
+    padding: 5px;
+    font-family: $text-general;
+}
+
+.tituloConten{
+    /*background-color: aquamarine;*/
+    min-height: 35px;
+}
+.contenCards{
+    display: grid;
+    min-height: 35px;
+    /*background-color:cadetblue;*/
+    padding: 5px;
+    width: auto;
+    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+}
+.vistaConten{
+    /*background-color:rgb(97, 61, 255);*/
+    display: flex;
+    align-items: center; 
+    flex-shrink: 0;
+    gap: 2px;
+    font-size: 13px;
+    font-family: $text-general;
+    padding: 5px 5px;
+}
+.tituloTextConten{
+    /*background-color:rgb(255, 61, 249);*/
+    
+    font-size: 20px;
+    font-family: $text-general;
+    font-weight: bold;
+    padding: 10px 5px;
+}
+.tituloTextFiltro{
+    font-size: 16px;
+    padding: 10px 0px;
+    font-weight: bold;
+}
+
+
+.filter-btn{
+    display: list-item;
+    font-size: 14px;
+    text-align: start;
+    color: #3e3d3d;
+    font-family: $text-general;
+    border: none;
+    border-radius: 5px;
+    margin: 2px 0px 2px 18px;
+    padding: 3px 0px;
+    cursor: pointer;
+    background-size: 100px;
+    background-color:#f8f8f800;
+}
+.filter-btn:hover{
+    font-weight: bold;
+}
+

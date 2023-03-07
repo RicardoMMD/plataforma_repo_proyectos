@@ -1,0 +1,77 @@
+
+
+
+section{
+    h2{
+        font-size: 22px;
+    }
+}
+
+.bkgn-sub{
+    display: block; 
+    object-fit: cover; 
+    border-radius: 0px; 
+    width: 100%; 
+    height: 25vh; 
+    opacity: 1; 
+    object-position: 20% 60%;
+}
+
+.conten-consept{
+    margin: 5vh 15vw;
+    text-align: justify;
+    font-family: 'Oxygen Mono', monospace;
+}
+.migas{
+    position: absolute;
+    display: flex;
+    align-items: center;
+    color: black;
+    padding: 5px;
+    border-radius: 5px;
+    background-color: #eeeeee;
+    font-weight: bold;
+    gap: 8px;
+    text-decoration: none;
+    left: 3% ;
+}
+.migas:hover{
+    background-color: #d8d8d8;
+}
+
+.contenedorCajitas{
+    background-color: aqua;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+.cuadrito{
+    padding: 25px;
+    margin: 2%;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px 2px rgb(0, 174, 174);
+    background-color: coral;
+}
+.return-btn{
+    font-size: 10px;
+    display:flex;
+    align-items: center;
+    height: 35px;
+    width: 19px;
+    padding: 0px 7px;
+    gap: 7px;
+    background-color: #e5e5e5;
+    border-radius: 5px;
+    float: right;
+    color: black;
+    position:absolute;
+    right: 18px;
+    top: 12px;
+
+}
+.return-btn:hover{
+    background-color: #cdcdcd;
+    font-weight: bold;
+    cursor: pointer;
+    color: black;
+}

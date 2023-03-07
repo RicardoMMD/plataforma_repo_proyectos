@@ -1,0 +1,59 @@
+$color-bk:#FBFBF7;
+$text-general: Open Sans,Arial,sans-serif; /*'Oxygen Mono', monospace*/    
+
+@use 'header';
+@use 'cards';
+@use 'tarjetero';
+@use 'pages';
+@use 'team';
+
+/* Cambios en elementos/etiquetas HTML */
+body{
+    background-color:$color-bk;
+    margin: 0% ;
+    font-family: $text-general;
+    a{
+        text-decoration: none;
+        text-transform: none;
+    }
+}
+hr{margin: 0;}
+.contenido{
+    margin: 1% 1%;
+    padding: 5px;
+}
+
+.tituloSaludo{
+    display: flex;
+}
+.active{
+    font-weight: bold;
+}
+
+
+
+
+
+@media(min-width: 576px){
+    .contenido{margin: 1% 1%;}
+}
+@media(min-width: 768px){
+    .contenido{margin: 1% 5%;}
+}
+@media(min-width: 1024px){
+    .contenido{margin: 1% 10%;}
+}
+
+
+
+
+
+
+
+/*Importamos fuentes de Google*/
+@import url('https://fonts.googleapis.com/css2?family=Nabla&family=Oxygen+Mono&display=swap');
+@font-palette-values --myPalette {
+    font-family: "Nabla";
+    base-palette: 3;
+    override-colors: 6 #fff;
+};
