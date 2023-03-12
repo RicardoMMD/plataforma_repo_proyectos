@@ -1,4 +1,4 @@
-
+$text-general: 'Roboto Slab';
 
 
 section{
@@ -7,6 +7,13 @@ section{
     }
 }
 
+
+
+.conten-consept-pages{
+    margin: 5vh 15vw;
+    text-align: justify;
+    font-family: $text-general;
+}
 .bkgn-sub{
     display: block; 
     object-fit: cover; 
@@ -15,12 +22,6 @@ section{
     height: 25vh; 
     opacity: 1; 
     object-position: 20% 60%;
-}
-
-.conten-consept{
-    margin: 5vh 15vw;
-    text-align: justify;
-    font-family: 'Oxygen Mono', monospace;
 }
 .migas{
     position: absolute;
@@ -75,3 +76,15 @@ section{
     cursor: pointer;
     color: black;
 }
+
+
+/*
+@media(min-width: 576px){
+    .conten-consept-pages{margin: 1% 9%;}
+}
+@media(min-width: 768px){
+    .conten-consept-pages{margin: 1% 9%;}
+}
+@media(min-width: 1024px){
+    .conten-consept-pages{margin: 1% 9%;}
+}*/

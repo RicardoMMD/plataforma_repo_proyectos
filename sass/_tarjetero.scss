@@ -1,9 +1,7 @@
-$text-general: 'Open Sans,Arial',sans-serif ; /*'Oxygen Mono', monospace*/
 
 .tarjetero{
     /*background-color: #ffbea6;*/
     border-radius: 5px;
-    font-family: $text-general;
 }
 .contenBody{
     display: grid;
@@ -23,14 +21,13 @@ $text-general: 'Open Sans,Arial',sans-serif ; /*'Oxygen Mono', monospace*/
     /*background-color: #ffbea6;*/
     margin: 1% 1%;
     padding: 5px;
-    font-family: $text-general;
 }
 
 .tituloConten{
     /*background-color: aquamarine;*/
     min-height: 35px;
 }
-.contenCards{
+.conten-cards{
     display: grid;
     min-height: 35px;
     /*background-color:cadetblue;*/
@@ -45,14 +42,11 @@ $text-general: 'Open Sans,Arial',sans-serif ; /*'Oxygen Mono', monospace*/
     flex-shrink: 0;
     gap: 2px;
     font-size: 13px;
-    font-family: $text-general;
     padding: 5px 5px;
 }
 .tituloTextConten{
     /*background-color:rgb(255, 61, 249);*/
-    
     font-size: 20px;
-    font-family: $text-general;
     font-weight: bold;
     padding: 10px 5px;
 }
@@ -61,6 +55,9 @@ $text-general: 'Open Sans,Arial',sans-serif ; /*'Oxygen Mono', monospace*/
     padding: 10px 0px;
     font-weight: bold;
 }
+li{
+    font-family: 'Roboto Slab', serif;
+}
 
 
 .filter-btn{
@@ -68,7 +65,6 @@ $text-general: 'Open Sans,Arial',sans-serif ; /*'Oxygen Mono', monospace*/
     font-size: 14px;
     text-align: start;
     color: #3e3d3d;
-    font-family: $text-general;
     border: none;
     border-radius: 5px;
     margin: 2px 0px 2px 18px;
@@ -80,4 +76,3 @@ $text-general: 'Open Sans,Arial',sans-serif ; /*'Oxygen Mono', monospace*/
 .filter-btn:hover{
     font-weight: bold;
 }
-

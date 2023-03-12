@@ -1,18 +1,51 @@
-.tituloPrincipal{
-    padding: 0px 3% 0px 3%;
-    background-color: #EC1E4C;
-    font-family: 'Open Sans,Arial',sans-serif;
-    color: #fdfdfd;
-    font-size: 45px;
+@mixin titulos($font-size, $color:blank){
+    font-family: 'Roboto Slab';
+    color: $color;
+    font-size: $font-size;
     margin: 0px;
 }
 
+
+.conten-titulo-principal{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    top: 60px;
+    left: 1%;
+} 
+.tituloPrincipal{
+    @include titulos(55px, #fff)
+}
+.titulos-secundarios{
+    @include titulos(45px,#fff)
+}
+
+.margen{
+    background-color: #EC1E4C;
+    width: 100%;
+    height: 35px;
+}
 .bkgn-sub-principal{
     display: block; 
     object-fit: cover; 
     border-radius: 0px; 
     width: 100%; 
-    height: 18vh; 
+    height: 200px;
     opacity: 1; 
     object-position: 25% 40%;
+}
+
+
+
+
+
+
+@media(min-width: 576px){
+    .conten-titulo-principal{left: 1%;}
+}
+@media(min-width: 768px){
+    .conten-titulo-principal{left: 5%;}
+}
+@media(min-width: 1024px){
+    .conten-titulo-principal{left: 10%;}
 }

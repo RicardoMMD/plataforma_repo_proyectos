@@ -2,6 +2,7 @@
 *.css
 *.css.map
 *.docx
+*.pdf
 
 # Ignorar los archivos JS generados
 *.js

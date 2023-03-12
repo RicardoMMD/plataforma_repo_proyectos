@@ -1,0 +1,78 @@
+$text-general: 'Roboto Slab';
+$color-titulo-detalle: #969696;
+
+.conten-mini-cards{
+    display: grid;
+    min-height: 35px;
+    /*background-color:cadetblue;*/
+    padding: 5px;
+    width: auto;
+    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
+}
+.mini-card{
+    width: 220px;
+    height:100px;
+    border-radius: 5px;
+    margin: 5px;
+    background-color: #fffff3;
+    box-shadow: 2px 2px 5px 2px #d8d8d8;
+}
+
+
+.conten-detalles{
+    /*background-color: aqua;*/
+    width: 100%; 
+    max-width: 100%; 
+    padding: 8px 0px; 
+    margin: 0px auto;
+}
+.item-detalles{
+    font-family: $text-general;
+    /*background-color: aquamarine;*/
+    display: flex; 
+    padding-bottom: 4px; 
+    width: 100%;
+    height: 40px;
+    color: $color-titulo-detalle;
+    .titulo-detalle{
+        /*background-color: #fffff3;*/
+        display: flex; 
+        align-items: center; 
+        gap: 6px;
+        height: 100%; 
+        width: 240px; 
+        border-radius: 3px; 
+        padding: 0px 6px;
+        i{
+            width: 30px;
+            text-align: center;
+        }
+        .fa-solid{
+            color: $color-titulo-detalle;
+        }
+    }
+    .valor-detalle{
+        display: flex; 
+        align-items: center; 
+        height: 100%; 
+        color: #2c2c2c;
+        .premio_4{
+            background-color: #fbb8fc;
+            padding: 3px 5px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #c136c3;
+        }
+        .valor-detalle-tematica{
+            background-color: #abc4ff;
+            padding: 3px 5px;
+            border-radius: 5px;
+            font-size: 15px;
+            font-weight: bold;
+            color: #265dc3;
+        }
+        
+    }
+}
+
