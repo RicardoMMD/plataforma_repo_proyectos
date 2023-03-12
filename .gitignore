@@ -1,5 +1,6 @@
 # Ignorar los archivos CSS generados
 *.css
+!styles.css
 *.css.map
 *.docx
 *.pdf
