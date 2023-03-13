@@ -52,9 +52,9 @@ $color-titulo-detalle: #9f9f9f;
         .premio_1{@include colors-bk-tex(#fff1ac, #ba9b01)}
         .premio_2{@include colors-bk-tex(#eeeeee, #797979)}
         .premio_3{@include colors-bk-tex(#ffdbc1, #d96410)}
-        .premio_4{@include colors-bk-tex(#fec1ff, #d931c0)}
+        .premio_4{@include colors-bk-tex(#f9dbfa, #d931c0)}
         .valor-detalle-tematica{
-            @include colors-bk-tex(#c2d5ff, #1d57ad)
+            @include colors-bk-tex(#cedcf9, #1d57ad)
         }
         
     }
