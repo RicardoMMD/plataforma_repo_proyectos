@@ -14,7 +14,7 @@ $bk-team-color: #e4e4e4;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    width: 12rem;
+    width: 13rem;
     margin: 10px;
     border-radius: 7px;
     background-color: $bk-team-color;
@@ -74,9 +74,10 @@ $bk-team-color: #e4e4e4;
                 top: 0;
             }
         }
-        li:nth-child(1) a:before{background: #3b5999;}
-        li:nth-child(2) a:before{background: #55acee;}
-        li:nth-child(3) a:before {background: #0077b5;}
+        .web a:before{background: #9815e9;}
+        .twit a:before{background: #55acee;}
+        .beh a:before {background: black;}
+        .inta a:before {background: #F65202;}
         
     }
 }

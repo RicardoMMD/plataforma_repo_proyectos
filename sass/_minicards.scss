@@ -1,21 +1,13 @@
 $text-general: 'Roboto Slab';
-$color-titulo-detalle: #969696;
+$color-titulo-detalle: #9f9f9f;
 
-.conten-mini-cards{
-    display: grid;
-    min-height: 35px;
-    /*background-color:cadetblue;*/
-    padding: 5px;
-    width: auto;
-    grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
-}
-.mini-card{
-    width: 220px;
-    height:100px;
+@mixin colors-bk-tex($bk, $color:blank){
+    background-color: $bk;
+    color: $color;
+    padding: 3px 5px;
     border-radius: 5px;
-    margin: 5px;
-    background-color: #fffff3;
-    box-shadow: 2px 2px 5px 2px #d8d8d8;
+    font-size: 15px;
+    font-weight: bold;
 }
 
 
@@ -34,13 +26,14 @@ $color-titulo-detalle: #969696;
     width: 100%;
     height: 40px;
     color: $color-titulo-detalle;
+    margin: 7px;
     .titulo-detalle{
         /*background-color: #fffff3;*/
         display: flex; 
         align-items: center; 
         gap: 6px;
         height: 100%; 
-        width: 240px; 
+        min-width: 230px; 
         border-radius: 3px; 
         padding: 0px 6px;
         i{
@@ -56,21 +49,12 @@ $color-titulo-detalle: #969696;
         align-items: center; 
         height: 100%; 
         color: #2c2c2c;
-        .premio_4{
-            background-color: #fbb8fc;
-            padding: 3px 5px;
-            border-radius: 5px;
-            font-size: 15px;
-            font-weight: bold;
-            color: #c136c3;
-        }
+        .premio_1{@include colors-bk-tex(#fff1ac, #ba9b01)}
+        .premio_2{@include colors-bk-tex(#eeeeee, #797979)}
+        .premio_3{@include colors-bk-tex(#ffdbc1, #d96410)}
+        .premio_4{@include colors-bk-tex(#fec1ff, #d931c0)}
         .valor-detalle-tematica{
-            background-color: #abc4ff;
-            padding: 3px 5px;
-            border-radius: 5px;
-            font-size: 15px;
-            font-weight: bold;
-            color: #265dc3;
+            @include colors-bk-tex(#c2d5ff, #1d57ad)
         }
         
     }

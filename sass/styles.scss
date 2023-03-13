@@ -26,7 +26,7 @@ hr{margin: 0;}
 
 
 .conten-consept{
-    margin: 5vh 15vw;
+    margin: 5% 15%;
     text-align: justify;
     font-family: $text-general;
 }
@@ -37,21 +37,6 @@ hr{margin: 0;}
     font-weight: bold;
 }
 
-
-
-
-@media(min-width: 376px){
-    .conten-consept{margin: 5vh 3vw;}
-}
-@media(min-width: 576px){
-    .conten-consept{margin: 5vh 5vw;}
-}
-@media(min-width: 768px){
-    .conten-consept{margin: 5vh 10vw;}
-}
-@media(min-width: 1024px){
-    .conten-consept{margin: 5vh 15vw;}
-}
 
 
 

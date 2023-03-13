@@ -2,6 +2,7 @@
 .tarjetero{
     /*background-color: #ffbea6;*/
     border-radius: 5px;
+    
 }
 .contenBody{
     display: grid;
@@ -27,13 +28,13 @@
     /*background-color: aquamarine;*/
     min-height: 35px;
 }
-.conten-cards{
-    display: grid;
-    min-height: 35px;
+.conten-cards-1{
     /*background-color:cadetblue;*/
-    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+    padding: 10px;
     width: auto;
-    grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
+    min-height: 35px;
 }
 .vistaConten{
     /*background-color:rgb(97, 61, 255);*/
