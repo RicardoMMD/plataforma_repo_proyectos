@@ -1,25 +1,39 @@
 /* Cambios en elementos/etiquetas HTML */
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300;400;700&display=swap");
+header {
+  position: relative;
+}
+
 .conten-titulo-principal {
   position: absolute;
   display: flex;
+  justify-self: center;
   flex-direction: column;
-  top: 60px;
-  left: 1%;
+  top: 50px;
+  margin: 0px 14%;
 }
-
-.tituloPrincipal {
+.conten-titulo-principal h1 {
   font-family: "Roboto Slab";
   color: #fff;
-  font-size: 55px;
+  font-size: 50px;
   margin: 0px;
 }
-
-.titulos-secundarios {
+.conten-titulo-principal .titulos-secundarios {
   font-family: "Roboto Slab";
   color: #fff;
   font-size: 45px;
   margin: 0px;
+}
+
+.bkgn-sub-principal {
+  position: relative;
+  display: block;
+  object-fit: cover;
+  border-radius: 0px;
+  width: 100%;
+  height: 400px;
+  opacity: 1;
+  object-position: 25% 40%;
 }
 
 .margen {
@@ -28,33 +42,28 @@
   height: 35px;
 }
 
-.bkgn-sub-principal {
-  display: block;
-  object-fit: cover;
-  border-radius: 0px;
-  width: 100%;
-  height: 200px;
-  opacity: 1;
-  object-position: 25% 40%;
-}
-
-@media (min-width: 576px) {
-  .conten-titulo-principal {
-    left: 1%;
+@media (min-width: 350px) {
+  .bkgn-sub-principal {
+    height: 500px;
   }
 }
-@media (min-width: 768px) {
-  .conten-titulo-principal {
-    left: 5%;
+@media (min-width: 457px) {
+  .bkgn-sub-principal {
+    height: 450px;
   }
 }
-@media (min-width: 1024px) {
-  .conten-titulo-principal {
-    left: 10%;
+@media (min-width: 700px) {
+  .bkgn-sub-principal {
+    height: 280px;
+  }
+}
+@media (min-width: 880px) {
+  .bkgn-sub-principal {
+    height: 230px;
   }
 }
 .card {
-  width: 320px;
+  width: 280px;
   margin: 10px;
   border-radius: 5px;
   background-color: #ffffff;
@@ -114,6 +123,7 @@
   font-family: "Roboto Slab";
   font-size: 12px;
   line-height: 1.8;
+  text-align: start;
 }
 
 .yt-center-video {
@@ -202,7 +212,7 @@
 .conten-cards-1 {
   /*background-color:cadetblue;*/
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(18rem, 1fr));
   padding: 10px;
   width: auto;
   min-height: 35px;
@@ -364,6 +374,34 @@ section h2 {
   margin: 5px;
   padding: 0%;
 }
+.team-card .card-img {
+  width: 100%;
+  height: 11rem;
+  object-fit: cover;
+  object-position: 0% 90%;
+  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 60%);
+}
+.team-card .profile-img {
+  width: 6rem;
+  height: 6rem;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-top: -10rem;
+  z-index: 999;
+  border: 7px solid #e4e4e4;
+}
+.team-card .name-profile {
+  font-size: 12px;
+  font-weight: bold;
+}
+.team-card .email {
+  font-size: 10px;
+  font-style: italic;
+  color: rgb(48, 48, 48);
+}
+.team-card .about {
+  font-size: 12px;
+}
 .team-card ul {
   display: flex;
   margin: 10px;
@@ -420,6 +458,9 @@ section h2 {
 .team-card ul .twit a:before {
   background: #55acee;
 }
+.team-card ul .linked a:before {
+  background: #0e76a8;
+}
 .team-card ul .beh a:before {
   background: black;
 }
@@ -427,37 +468,101 @@ section h2 {
   background: #F65202;
 }
 
-.team-card .card-img {
-  width: 100%;
-  height: 11rem;
-  object-fit: cover;
-  object-position: 0% 90%;
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 60%);
+.team-card-v2 {
+  background-color: #d0d0d0;
+  max-width: 180px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  margin-bottom: 3vw;
+  text-align: center;
 }
-
-.team-card .profile-img {
-  width: 6rem;
-  height: 6rem;
-  object-fit: cover;
-  border-radius: 50%;
-  margin-top: -10rem;
-  z-index: 999;
-  border: 7px solid #e4e4e4;
-}
-
-.name-profile {
-  font-size: 12px;
+.team-card-v2 .name-profile {
+  font-size: 15px;
   font-weight: bold;
 }
-
-.email {
-  font-size: 10px;
+.team-card-v2 .email {
+  font-size: 12px;
   font-style: italic;
   color: rgb(48, 48, 48);
 }
-
-.about {
-  font-size: 12px;
+.team-card-v2 .fa-solid {
+  margin-right: 1rem;
+  font-size: 35px;
+}
+.team-card-v2 p {
+  margin: 2px;
+  font-weight: bold;
+  color: #262626;
+  font-size: small;
+}
+.team-card-v2 .datos-colaborador {
+  align-items: center;
+}
+.team-card-v2 ul {
+  display: flex;
+  margin: 10px;
+  padding: 0px;
+}
+.team-card-v2 ul li {
+  list-style: none;
+}
+.team-card-v2 ul li a {
+  width: 35px;
+  height: 35px;
+  background-color: #f1f1f1;
+  text-align: center;
+  line-height: 10px;
+  font-size: 20px;
+  margin: 0 5px;
+  display: block;
+  border-radius: 50%;
+  border: 5px solid #858585;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #858585;
+  z-index: 1;
+}
+.team-card-v2 ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+.team-card-v2 ul li a i {
+  margin-top: 8px;
+}
+.team-card-v2 ul li a:hover .icon {
+  color: #ffffff;
+  transform: rotateY(360deg);
+}
+.team-card-v2 ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+.team-card-v2 ul li a:hover:before {
+  top: 0;
+}
+.team-card-v2 ul .web a:before {
+  background: #9815e9;
+}
+.team-card-v2 ul .twit a:before {
+  background: #55acee;
+}
+.team-card-v2 ul .beh a:before {
+  background: black;
+}
+.team-card-v2 ul .inta a:before {
+  background: #F65202;
 }
 
 .conten-detalles {
@@ -472,9 +577,10 @@ section h2 {
   font-family: "Roboto Slab";
   /*background-color: aquamarine;*/
   display: flex;
+  align-items: center;
   padding-bottom: 4px;
   width: 100%;
-  height: 40px;
+  min-height: 40px;
   color: #9f9f9f;
   margin: 7px;
 }
@@ -499,7 +605,7 @@ section h2 {
   display: flex;
   align-items: center;
   height: 100%;
-  color: #2c2c2c;
+  color: #9f9f9f;
 }
 .item-detalles .valor-detalle .premio_1 {
   background-color: #fff1ac;
@@ -542,6 +648,38 @@ section h2 {
   font-weight: bold;
 }
 
+.video-carousel {
+  background-color: aquamarine;
+  padding: 20px;
+}
+.video-carousel .contain {
+  margin: 0 auto;
+  overflow: hidden;
+}
+.video-carousel .videos-container {
+  display: grid;
+  grid-template-columns: 50px 1fr 50px;
+  align-items: center;
+}
+.video-carousel .videos-container .fa-solid {
+  cursor: pointer;
+}
+.video-carousel .videos-container .fa-solid:nth-of-type(2) {
+  justify-self: end;
+}
+.video-carousel .videos-container .video-wrapper {
+  grid-column: 2/3;
+  grid-row: 1/2;
+  justify-self: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1.5s;
+}
+.video-carousel .videos-container .video-active {
+  opacity: 1;
+  pointer-events: unset;
+}
+
 body {
   background-color: #FBFBF7;
   margin: 0%;
@@ -562,7 +700,7 @@ hr {
 }
 
 .conten-consept {
-  margin: 5% 15%;
+  margin: 5% 14%;
   text-align: justify;
   font-family: "Roboto Slab";
 }

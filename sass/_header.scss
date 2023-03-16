@@ -5,19 +5,35 @@
     margin: 0px;
 }
 
+header{
+    position: relative;
+}
 
 .conten-titulo-principal{
     position: absolute;
     display: flex;
+    justify-self: center;
     flex-direction: column;
-    top: 60px;
-    left: 1%;
+    top: 50px;
+    margin: 0px 14%;
+    h1{
+        @include titulos(50px, #fff)
+    }
+    .titulos-secundarios{
+        @include titulos(45px,#fff)
+    }
 } 
-.tituloPrincipal{
-    @include titulos(55px, #fff)
-}
-.titulos-secundarios{
-    @include titulos(45px,#fff)
+
+
+.bkgn-sub-principal{
+    position: relative;
+    display: block; 
+    object-fit: cover; 
+    border-radius: 0px; 
+    width: 100%; 
+    height: 400px;
+    opacity: 1; 
+    object-position: 25% 40%;
 }
 
 .margen{
@@ -25,27 +41,20 @@
     width: 100%;
     height: 35px;
 }
-.bkgn-sub-principal{
-    display: block; 
-    object-fit: cover; 
-    border-radius: 0px; 
-    width: 100%; 
-    height: 200px;
-    opacity: 1; 
-    object-position: 25% 40%;
+
+
+
+
+
+@media(min-width: 350px){
+    .bkgn-sub-principal{height: 500px;}
 }
-
-
-
-
-
-
-@media(min-width: 576px){
-    .conten-titulo-principal{left: 1%;}
+@media(min-width: 457px){
+    .bkgn-sub-principal{height: 450px;}
 }
-@media(min-width: 768px){
-    .conten-titulo-principal{left: 5%;}
+@media(min-width: 700px){
+    .bkgn-sub-principal{height: 280px;}
 }
-@media(min-width: 1024px){
-    .conten-titulo-principal{left: 10%;}
+@media(min-width: 880px){
+    .bkgn-sub-principal{height: 230px;}
 }

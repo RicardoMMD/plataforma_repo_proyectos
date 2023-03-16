@@ -7,6 +7,7 @@ $text-general: 'Roboto Slab';
 @use 'pages';
 @use 'team';
 @use 'minicards';
+@use 'carrusel';
 
 /* Cambios en elementos/etiquetas HTML */
 body{
@@ -26,7 +27,7 @@ hr{margin: 0;}
 
 
 .conten-consept{
-    margin: 5% 15%;
+    margin: 5% 14%;
     text-align: justify;
     font-family: $text-general;
 }

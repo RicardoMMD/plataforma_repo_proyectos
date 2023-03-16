@@ -22,9 +22,10 @@ $color-titulo-detalle: #9f9f9f;
     font-family: $text-general;
     /*background-color: aquamarine;*/
     display: flex; 
+    align-items: center; 
     padding-bottom: 4px; 
     width: 100%;
-    height: 40px;
+    min-height: 40px;
     color: $color-titulo-detalle;
     margin: 7px;
     .titulo-detalle{
@@ -48,7 +49,7 @@ $color-titulo-detalle: #9f9f9f;
         display: flex; 
         align-items: center; 
         height: 100%; 
-        color: #2c2c2c;
+        color: $color-titulo-detalle;
         .premio_1{@include colors-bk-tex(#fff1ac, #ba9b01)}
         .premio_2{@include colors-bk-tex(#eeeeee, #797979)}
         .premio_3{@include colors-bk-tex(#ffdbc1, #d96410)}

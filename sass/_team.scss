@@ -8,6 +8,8 @@ $bk-team-color: #e4e4e4;
     width: auto;
     grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
 }
+
+
 .team-card{
     position: relative;
     display: flex;
@@ -24,6 +26,35 @@ $bk-team-color: #e4e4e4;
     p{
         margin: 5px;
         padding: 0%;
+    }
+    
+    .card-img{
+        width: 100%;
+        height: 11rem;
+        object-fit: cover;
+        object-position: 0% 90%;
+        clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 60%);
+    }
+    .profile-img{
+        width: 6rem;
+        height: 6rem;
+        object-fit: cover;
+        border-radius: 50%;
+        margin-top: -10rem;
+        z-index: 999;
+        border: 7px solid $bk-team-color;
+    }
+    .name-profile{
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .email{
+        font-size: 10px;
+        font-style: italic;
+        color: rgb(48, 48, 48);
+    }
+    .about{
+        font-size: 12px;
     }
     ul {
         display: flex;
@@ -76,37 +107,92 @@ $bk-team-color: #e4e4e4;
         }
         .web a:before{background: #9815e9;}
         .twit a:before{background: #55acee;}
+        .linked a:before{background: #0e76a8;}
         .beh a:before {background: black;}
         .inta a:before {background: #F65202;}
         
     }
 }
-.team-card .card-img{
-    width: 100%;
-    height: 11rem;
-    object-fit: cover;
-    object-position: 0% 90%;
-    clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 60%);
-}
-.team-card .profile-img{
-    width: 6rem;
-    height: 6rem;
-    object-fit: cover;
-    border-radius: 50%;
-    margin-top: -10rem;
-    z-index: 999;
-    border: 7px solid $bk-team-color;
-}
-.name-profile{
-    font-size: 12px;
-    font-weight: bold;
-}
-.email{
-    font-size: 10px;
-    font-style: italic;
-    color: rgb(48, 48, 48);
-}
-.about{
-    font-size: 12px;
-}
 
+
+.team-card-v2{
+    background-color: #d0d0d0;
+    max-width: 180px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    margin-bottom: 3vw;
+    text-align: center;
+    .name-profile{
+        font-size: 15px;
+        font-weight: bold;
+    }
+    .email{
+        font-size: 12px;
+        font-style: italic;
+        color: rgb(48, 48, 48);
+    }
+    .fa-solid{margin-right:1rem;font-size: 35px;}
+    p{margin: 2px;font-weight: bold;color: #262626;font-size: small;}
+    .datos-colaborador{
+        align-items: center;
+    }
+    ul {
+        display: flex;
+        margin: 10px;
+        padding: 0px;
+        li {
+            list-style: none;
+            a {
+                width: 35px;
+                height: 35px;
+                background-color: #f1f1f1;
+                text-align: center;
+                line-height: 10px;
+                font-size: 20px;
+                margin: 0 5px;
+                display: block;
+                border-radius: 50%;
+                border: 5px solid #858585;
+                position: relative;
+                overflow: hidden;
+                border: 1px solid #858585;
+                z-index: 1;
+                .icon {
+                    position: relative;
+                    color: #262626;
+                    transition: .5s;
+                    z-index: 3;
+                }
+                i{
+                    margin-top: 8px;
+                }
+            }
+            a:hover .icon {
+                color: #ffffff;
+                transform: rotateY(360deg);
+            }
+            a:before {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #f00;
+                transition: .5s;
+                z-index: 2;
+            }
+            a:hover:before {
+                top: 0;
+            }
+        }
+        .web a:before{background: #9815e9;}
+        .twit a:before{background: #55acee;}
+        .beh a:before {background: black;}
+        .inta a:before {background: #F65202;}
+        
+    }
+}

@@ -10,14 +10,14 @@
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="icon" href="/img/redim_logo.png" 
         type="image/gif" sizes="16x16"> <!--  Fabicon -->
-    <title>Visualizador de datos de pobreza de NNA</title>
+    <title>Municipios de las niñeces</title>
 </head>
 <body>
 
     <header>
         <img class = 'bkgn-sub-principal' src="../img/img_1_bk.jpg" alt="">
         <div class="conten-titulo-principal">
-            <h1 class = 'titulos-secundarios'">Visualizador de datos de pobreza de Niñas, Niños y Adolescentes</h1>
+            <h1 class = 'titulos-secundarios'">Municipios de las niñeces</h1>
         </div>
         <div class = 'margen'></div>
     </header>
@@ -27,6 +27,7 @@
             <img style="margin: 5px;" width="20px" src="https://cdn-icons-png.flaticon.com/512/2268/2268485.png" alt="">
         </a>
 
+        <!-- Detalles del proyecto -->
         <div class="conten-detalles">
             <div class='item-detalles'>
                 <div class="titulo-detalle">
@@ -34,8 +35,8 @@
                     Premio
                 </div>
                 <div class="valor-detalle">
-                    <span class="premio_4">
-                        Mención honorífica 
+                    <span class="premio_2">
+                        2do lugar
                     </span>
                 </div>
             </div>
@@ -46,7 +47,15 @@
                 </div>
                 <div class="valor-detalle">
                     <span>
-                        CONEVAL, Medición de la pobreza 2016-2020
+                        <ul>
+                            <li>REDIM, Infancia Cuenta en México 2022 (Población de niñas y niños con
+                                discapacidad)</li>
+                                <li>INEGI 2020 (Características físicas del entorno urbano)</li>
+                                <li>DENUE 2020 (Consultorios del sector público de audiología y de terapia ocupacional, física y del lenguaje)</li>
+                                <li>SINCE 2020</li>
+                                <li>CONAPO 2020 (Grado de marginación)</li>
+                                <li>INEGI, Inventario Nacional de Vivienda 2020</li>
+                        </ul>
                     </span>
                 </div>
             </div>
@@ -57,7 +66,7 @@
                 </div>
                 <div class="valor-detalle">
                     <span class="valor-detalle-tematica">
-                        Pobreza
+                        Discapacidad
                     </span>
                 </div>
             </div>
@@ -65,7 +74,7 @@
 
         <h2>Introducción</h2> 
         <p>
-            El “Visualizador de datos de pobreza de Niñas, Niños y Adolescentes” consiste en una plataforma web en donde los usuarios podrán explorar mediante gráficas y mapas dinámicos varios de los principales indicadores de pobreza multidimensional para el grupo de población de 0 a 17 años, así como para la población total. Esta información se encuentra disponible para los años 2016, 2018 y 2020, tanto a nivel nacional como por entidades federativas. Este proyecto utilizó bases de datos de la Red por los Derechos de la Infancia en México (REDIM) y del Consejo Nacional de Evaluación de la Política del Desarrollo Social (CONEVAL).
+            El proyecto parte de una investigación que llevamos a cabo en Exploradores de la ciudad A.C. denominada Municipios de las niñeces, en dónde analizamos la cercanía de las manzanas urbanas habitadas por niñas y niños a los parques en una distancia caminable de 500 metros en los 10 municipios con más niñas y niños de 0 a 11 años (ver carpeta de drive Municipios de las niñeces). Posteriormente se analizaron los últimos informes de gobierno municipales para saber en qué se estaba invirtiendo para espacio público y niñeces, y saber el enfoque de las políticas públicas en estos territorios.
         </p>
         
         <div style="display:flex;position: relative;">
@@ -75,15 +84,40 @@
             </a>
         </div>
         
-        <iframe width="98%" height="450" src="https://dacostageo.shinyapps.io/NNA_pobreza/" title="shinyapps" style="border:2px solid rgb(93, 93, 93);"  ></iframe>
+        <!-- Carrusel -->
+        <section class="video-carousel">
+            <div class="videos-container contain">
+                <i class="fa-solid fa-chevron-left" id="before"></i>
 
+                <!-- Videos -->
+                <div class="video-wrapper video-active" data-id="1">
+                    <iframe width="360" height="285" src="https://www.youtube.com/embed/6xJjGfgPLQ8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper" data-id="2">
+                    <iframe width="360" height="285" src="https://www.youtube.com/embed/cSvzUVNNC5k" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper" data-id="3">
+                    <iframe width="360" height="285" src="https://www.youtube.com/embed/ZIzgydiU0Ng" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <div class="video-wrapper" data-id="4">
+                    <iframe width="360" height="285" src="https://www.youtube.com/embed/yzrjibEGwlg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                </div>
+                <!-- Videos -->
+
+
+                <i class="fa-solid fa-chevron-right" id="after"></i>
+            </div>
+        </section>
+        
+
+        <!-- Video de presentación -->
         <h2>Presentación en el 1er. Datatón sobre Niñez y Adolescencia</h2> 
         <div class = 'yt-center-video'>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/X7aKHspYAlM?start=1550" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         </div>
         
 
-
+        <!-- Datos del equipo -->
         <h2>Equipo</h2>
         <div class="conten-cards">
             <div class="team-card">
@@ -101,9 +135,9 @@
                 <!-- <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80" alt="" class="card-img">
                 <img class="profile-img" src="https://cdn-icons-png.flaticon.com/512/149/149071.png" alt=""> -->
                 <p class="name-profile">Daniel Acosta Chávez</p>
-               <!--  <p class="email">perfil_2@email.com</p> -->
+                <!--  <p class="email">perfil_2@email.com</p> -->
                 <ul>
-                   <!--  <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
+                    <!--  <li><a href="#"><i class="fab fa-facebook-f icon"></i></a></li>
                     <li><a href="#"><i class="fab fa-twitter icon"></i></a></li> -->
                     <li class="linked"><a href="https://www.linkedin.com/in/acosta-chavez-daniel/"><i class="fab fa-linkedin-in icon"></i></a></li>
                 </ul>
@@ -137,6 +171,6 @@
 
     
     </section>
-    
+    <script src="../js/script.js"></script>
 </body>
 </html>
