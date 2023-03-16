@@ -17,3 +17,4 @@
 # Excepciones
 !styles.css
 !/img/*.jpg
+!script.js

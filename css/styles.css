@@ -667,7 +667,7 @@ section h2 {
 .video-carousel .videos-container .fa-solid:nth-of-type(2) {
   justify-self: end;
 }
-.video-carousel .videos-container .video-wrapper {
+.video-carousel .videos-container .video_wrapper {
   grid-column: 2/3;
   grid-row: 1/2;
   justify-self: center;
@@ -675,7 +675,7 @@ section h2 {
   pointer-events: none;
   transition: opacity 1.5s;
 }
-.video-carousel .videos-container .video-active {
+.video-carousel .videos-container .video_wrapper--show {
   opacity: 1;
   pointer-events: unset;
 }
