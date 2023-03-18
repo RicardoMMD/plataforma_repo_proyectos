@@ -1,7 +1,10 @@
 .video-carousel{
-    background-color: aquamarine;
+    background-color: #e4e4e4;
+    border-radius: 5px;
+    box-shadow: .2rem .2rem .5rem #00000033;
     padding: 20px;
-
+    width: 50%;
+    margin: 0px auto;
     .contain{
         margin: 0 auto;
         overflow: hidden;
@@ -12,8 +15,10 @@
         align-items: center;
 
 
-        .fa-solid{
+        .fa-chevron-right, .fa-chevron-left{
             cursor: pointer;
+            font-size: 30px;
+            color: #5b5b5b;
         }
         .fa-solid:nth-of-type(2){
             justify-self: end;
@@ -25,10 +30,13 @@
             opacity: 0;
             pointer-events: none;
             transition: opacity 1.5s;
+            
         }
-        .video_wrapper--show{
+        .v-avtive{
             opacity: 1;
             pointer-events: unset;
         }
     }
 }
+
+

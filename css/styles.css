@@ -272,6 +272,9 @@ section h2 {
   text-align: justify;
   font-family: "Roboto Slab";
 }
+.conten-consept-pages iframe {
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
+}
 
 .bkgn-sub {
   display: block;
@@ -649,8 +652,12 @@ section h2 {
 }
 
 .video-carousel {
-  background-color: aquamarine;
+  background-color: #e4e4e4;
+  border-radius: 5px;
+  box-shadow: 0.2rem 0.2rem 0.5rem rgba(0, 0, 0, 0.2);
   padding: 20px;
+  width: 50%;
+  margin: 0px auto;
 }
 .video-carousel .contain {
   margin: 0 auto;
@@ -661,8 +668,10 @@ section h2 {
   grid-template-columns: 50px 1fr 50px;
   align-items: center;
 }
-.video-carousel .videos-container .fa-solid {
+.video-carousel .videos-container .fa-chevron-right, .video-carousel .videos-container .fa-chevron-left {
   cursor: pointer;
+  font-size: 30px;
+  color: #5b5b5b;
 }
 .video-carousel .videos-container .fa-solid:nth-of-type(2) {
   justify-self: end;
@@ -675,9 +684,23 @@ section h2 {
   pointer-events: none;
   transition: opacity 1.5s;
 }
-.video-carousel .videos-container .video_wrapper--show {
+.video-carousel .videos-container .v-avtive {
   opacity: 1;
   pointer-events: unset;
+}
+
+.footer-conten {
+  background-color: #EC1E4C;
+  width: 100%;
+  min-height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo {
+  width: 150px;
+  margin: 10px 0px;
 }
 
 body {
