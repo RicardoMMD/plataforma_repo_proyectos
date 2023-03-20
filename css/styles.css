@@ -153,30 +153,6 @@ header {
   color: black;
 }
 
-.descrip-bk1 {
-  background-image: url("../img/img_1_compressed.jpg");
-}
-
-.descrip-bk2 {
-  background-image: url("../img/img_2_compressed.jpg");
-}
-
-.descrip-bk3 {
-  background-image: url("../img/img_3_compressed.jpg");
-}
-
-.descrip-bk4 {
-  background-image: url("https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1189&q=80");
-}
-
-.descrip-bk5 {
-  background-image: url("https://images.unsplash.com/photo-1627398242454-45a1465c2479?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80");
-}
-
-.descrip-bk6 {
-  background-image: url("https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=869&q=80");
-}
-
 .tarjetero {
   /*background-color: #ffbea6;*/
   border-radius: 5px;
@@ -304,21 +280,6 @@ section h2 {
   background-color: #d8d8d8;
 }
 
-.contenedorCajitas {
-  background-color: aqua;
-  display: flex;
-  flex-wrap: wrap;
-  padding: 2%;
-}
-
-.cuadrito {
-  padding: 25px;
-  margin: 2%;
-  border-radius: 5px;
-  box-shadow: 2px 2px 5px 2px rgb(0, 174, 174);
-  background-color: coral;
-}
-
 .return-btn {
   font-size: 10px;
   display: flex;
@@ -348,6 +309,10 @@ section h2 {
 }
 .visual-img img {
   box-shadow: 4px 4px 12px 6px #d8d8d8;
+}
+
+.tableauPlaceholder {
+  box-shadow: 2px 2px 5px 2px #d8d8d8;
 }
 
 .conten-cards {
@@ -400,7 +365,8 @@ section h2 {
 .team-card .email {
   font-size: 10px;
   font-style: italic;
-  color: rgb(48, 48, 48);
+  text-align: start;
+  color: #303030;
 }
 .team-card .about {
   font-size: 12px;
@@ -467,8 +433,17 @@ section h2 {
 .team-card ul .beh a:before {
   background: black;
 }
-.team-card ul .inta a:before {
+.team-card ul .insta a:before {
   background: #F65202;
+}
+.team-card ul .github a:before {
+  background: #464646;
+}
+.team-card ul .tele a:before {
+  background: #0088cc;
+}
+.team-card ul .tableau a:before {
+  background: #747474;
 }
 
 .team-card-v2 {
@@ -642,6 +617,14 @@ section h2 {
   font-size: 15px;
   font-weight: bold;
 }
+.item-detalles .valor-detalle .premio_5 {
+  background-color: #dbfae3;
+  color: #35c659;
+  padding: 3px 5px;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+}
 .item-detalles .valor-detalle .valor-detalle-tematica {
   background-color: #cedcf9;
   color: #1d57ad;
@@ -736,6 +719,66 @@ hr {
   font-weight: bold;
 }
 
-/*Importamos fuentes de Google*/
+.descrip-bk1 {
+  background-image: url("");
+}
+
+.descrip-bk2 {
+  background-image: url("");
+}
+
+.descrip-bk3 {
+  background-image: url("");
+}
+
+.descrip-bk4 {
+  background-image: url("");
+}
+
+.descrip-bk5 {
+  background-image: url("");
+}
+
+.descrip-bk6 {
+  background-image: url("");
+}
+
+.descrip-bk7 {
+  background-image: url("");
+}
+
+.descrip-bk8 {
+  background-image: url("");
+}
+
+.descrip-bk9 {
+  background-image: url("");
+}
+
+.descrip-bk10 {
+  background-image: url("");
+}
+
+.descrip-bk11 {
+  background-image: url("");
+}
+
+.descrip-bk12 {
+  background-image: url("");
+}
+
+.descrip-bk13 {
+  background-image: url("");
+}
+
+.descrip-bk14 {
+  background-image: url("");
+}
+
+.descrip-bk15 {
+  background-image: url("");
+}
+
+/*  Importamos fuentes de Google ---------------------------------------------  */
 
 /*# sourceMappingURL=styles.css.map */

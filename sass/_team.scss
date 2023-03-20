@@ -51,7 +51,8 @@ $bk-team-color: #e4e4e4;
     .email{
         font-size: 10px;
         font-style: italic;
-        color: rgb(48, 48, 48);
+        text-align: start;
+        color: #303030;
     }
     .about{
         font-size: 12px;
@@ -109,8 +110,10 @@ $bk-team-color: #e4e4e4;
         .twit a:before{background: #55acee;}
         .linked a:before{background: #0e76a8;}
         .beh a:before {background: black;}
-        .inta a:before {background: #F65202;}
-        
+        .insta a:before {background: #F65202;}
+        .github a:before{background: #464646;}
+        .tele a:before{background: #0088cc;}
+        .tableau a:before{background: #747474;}
     }
 }
 

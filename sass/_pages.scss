@@ -41,19 +41,6 @@ section{
     background-color: #d8d8d8;
 }
 
-.contenedorCajitas{
-    background-color: aqua;
-    display: flex;
-    flex-wrap: wrap;
-    padding: 2%;
-}
-.cuadrito{
-    padding: 25px;
-    margin: 2%;
-    border-radius: 5px;
-    box-shadow: 2px 2px 5px 2px rgb(0, 174, 174);
-    background-color: coral;
-}
 .return-btn{
     font-size: 10px;
     display:flex;
@@ -83,4 +70,8 @@ section{
 .visual-img{
     text-align: center;
     img{box-shadow: 4px 4px 12px 6px #d8d8d8;}
+}
+
+.tableauPlaceholder{
+    box-shadow: 2px 2px 5px 2px #d8d8d8;
 }

@@ -4,6 +4,7 @@
 *.docx
 *.pdf
 *.jpg
+*.mp4
 
 # Ignorar los archivos JS generados
 *.js
