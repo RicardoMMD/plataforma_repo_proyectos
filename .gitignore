@@ -19,5 +19,6 @@
 !styles.css
 !/img/*.jpg
 !/img/img_fichas/*.jpg
+!/img/infografias/*.jpg
 !script.js
 !/pdf/*.pdf
