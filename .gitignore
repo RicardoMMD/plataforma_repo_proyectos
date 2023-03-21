@@ -18,4 +18,5 @@
 # Excepciones
 !styles.css
 !/img/*.jpg
+!/img/img_fichas/*.jpg
 !script.js
