@@ -8,16 +8,7 @@
     display: grid;
     grid-template-columns: 180px auto;
 }
-.colFiltro{
-    /*background-color: beige;*/
-    display: flex;
-    flex-direction: column;
-    li::marker{
-        font-size: 23px;
-        content: "| ";
-        margin-right: 5px;
-    }
-}
+
 .descripcion{
     /*background-color: #ffbea6;*/
     margin: 1% 1%;
@@ -51,14 +42,43 @@
     font-weight: bold;
     padding: 10px 5px;
 }
-.tituloTextFiltro{
-    font-size: 16px;
-    padding: 10px 0px;
-    font-weight: bold;
+
+.colFiltro{
+    
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    padding-left: 5px;
+    .tituloTextFiltro{
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+    }
+    ul{
+        font-size: 16px;
+        padding: 10px 0px;
+        font-weight: bold;
+        list-style: none;
+        margin: 0px;
+        padding: 0%;
+        li{
+            font-family: 'Roboto Slab', serif;
+            margin: 5px 0px;
+            font-weight: normal;
+        }
+        .active{
+            font-weight: bold;
+        }
+    }
+    .fa-solid{
+        display: none;
+        margin-left: auto;
+        margin-right: 3%;
+        font-size: 14px;
+    }
 }
-li{
-    font-family: 'Roboto Slab', serif;
-}
+
+
 
 
 .filter-btn{
@@ -75,5 +95,42 @@ li{
     background-color:#f8f8f800;
 }
 .filter-btn:hover{
-    font-weight: bold;
+    font-weight: bolder;
+}
+
+
+@media screen and (max-width:478px){
+    .contenBody{
+        grid-template-columns: 1fr;
+    }
+    .colFiltro{
+        background-color: #f3f3f0;
+        border-radius: 8px;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        align-items: center;
+        .tituloTextFiltro{
+            cursor: pointer;
+            width: 100%;
+            text-align: center;
+            span{margin-left: 3%;}
+        }
+        .ftro-oculto{height: 250px;}
+        ul{
+            display: flex;
+            flex-flow: column nowrap;
+            height: 0px;
+            transition: all 0.5s;
+            overflow: hidden;
+            align-items: center;
+            justify-content: flex-end;
+            overflow: hidden;
+            li{
+                margin: 2px 0px;
+            }
+        }
+        .fa-solid{
+            display: block;
+        }
+    }
 }

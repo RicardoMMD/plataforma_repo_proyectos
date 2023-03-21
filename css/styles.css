@@ -163,17 +163,6 @@ header {
   grid-template-columns: 180px auto;
 }
 
-.colFiltro {
-  /*background-color: beige;*/
-  display: flex;
-  flex-direction: column;
-}
-.colFiltro li::marker {
-  font-size: 23px;
-  content: "| ";
-  margin-right: 5px;
-}
-
 .descripcion {
   /*background-color: #ffbea6;*/
   margin: 1% 1%;
@@ -211,14 +200,38 @@ header {
   padding: 10px 5px;
 }
 
-.tituloTextFiltro {
+.colFiltro {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  padding-left: 5px;
+}
+.colFiltro .tituloTextFiltro {
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+}
+.colFiltro ul {
   font-size: 16px;
   padding: 10px 0px;
   font-weight: bold;
+  list-style: none;
+  margin: 0px;
+  padding: 0%;
 }
-
-li {
+.colFiltro ul li {
   font-family: "Roboto Slab", serif;
+  margin: 5px 0px;
+  font-weight: normal;
+}
+.colFiltro ul .active {
+  font-weight: bold;
+}
+.colFiltro .fa-solid {
+  display: none;
+  margin-left: auto;
+  margin-right: 3%;
+  font-size: 14px;
 }
 
 .filter-btn {
@@ -236,9 +249,48 @@ li {
 }
 
 .filter-btn:hover {
-  font-weight: bold;
+  font-weight: bolder;
 }
 
+@media screen and (max-width: 478px) {
+  .contenBody {
+    grid-template-columns: 1fr;
+  }
+  .colFiltro {
+    background-color: #f3f3f0;
+    border-radius: 8px;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    align-items: center;
+  }
+  .colFiltro .tituloTextFiltro {
+    cursor: pointer;
+    width: 100%;
+    text-align: center;
+  }
+  .colFiltro .tituloTextFiltro span {
+    margin-left: 3%;
+  }
+  .colFiltro .ftro-oculto {
+    height: 250px;
+  }
+  .colFiltro ul {
+    display: flex;
+    flex-flow: column nowrap;
+    height: 0px;
+    transition: all 0.5s;
+    overflow: hidden;
+    align-items: center;
+    justify-content: flex-end;
+    overflow: hidden;
+  }
+  .colFiltro ul li {
+    margin: 2px 0px;
+  }
+  .colFiltro .fa-solid {
+    display: block;
+  }
+}
 section h2 {
   font-size: 22px;
 }
@@ -784,6 +836,26 @@ section h2 {
   background: #4267B2;
 }
 
+@media (max-width: 870px) {
+  ul {
+    zoom: 0.9;
+    flex-wrap: wrap;
+  }
+}
+@media (max-width: 477px) {
+  .conten-cards-1 {
+    justify-items: center;
+  }
+  .footer-conten {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
+  }
+  .conten-footer {
+    width: 180px;
+  }
+}
 body {
   background-color: #FBFBF7;
   margin: 0%;
@@ -804,17 +876,13 @@ hr {
 }
 
 .conten-consept {
-  margin: 5% 14%;
+  margin: 5% 5%;
   text-align: justify;
   font-family: "Roboto Slab";
 }
 
 .tituloSaludo {
   display: flex;
-}
-
-.active {
-  font-weight: bold;
 }
 
 .descrip-bk1 {
@@ -877,6 +945,11 @@ hr {
   background-image: url("../img/img_fichas/img_15.jpg");
 }
 
+@media (min-width: 800px) {
+  .conten-consept {
+    margin: 5% 13%;
+  }
+}
 /*  Importamos fuentes de Google ---------------------------------------------  */
 
 /*# sourceMappingURL=styles.css.map */

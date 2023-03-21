@@ -21,7 +21,8 @@ function filterCards(selectedCategories) {
 };
 
 // select filters
-const filters = document.querySelectorAll('.filter-btn'); /* */
+const filters = document.querySelectorAll('.filter-btn'); 
+
 
 // add click event listeners to filters
 for (let filter of filters) {
@@ -44,9 +45,11 @@ for (let filter of filters) {
 };
 
 
+// Ocultar/mostrar menu lateral del tarjetero
+const sideStatus = document.querySelector('.side-ul')
+const btnTituloTextFiltro = document.querySelector('.tituloTextFiltro')
 
 
-
-
-
-
+btnTituloTextFiltro.addEventListener('click',()=>{
+  sideStatus.classList.toggle('ftro-oculto')
+})

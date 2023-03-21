@@ -95,3 +95,33 @@
         .face a:before{background: #4267B2;}
     }
 }
+
+
+
+
+
+
+
+
+@media(max-width: 870px){
+    ul{
+        zoom: 0.9;
+        flex-wrap: wrap;
+    }
+}
+@media(max-width: 477px){
+    .conten-cards-1{
+        justify-items: center;
+    }
+    .footer-conten{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        justify-items: center;
+    }
+    .conten-footer{
+        width: 180px;
+    }
+}
+
+

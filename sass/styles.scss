@@ -28,15 +28,12 @@ hr{margin: 0;}
 
 
 .conten-consept{
-    margin: 5% 14%;
+    margin: 5% 5%;
     text-align: justify;
     font-family: $text-general;
 }
 .tituloSaludo{
     display: flex;
-}
-.active{
-    font-weight: bold;
 }
 
 
@@ -91,7 +88,11 @@ hr{margin: 0;}
 
 
 
-
+@media(min-width: 800px){
+    .conten-consept{
+        margin: 5% 13%;
+    }
+}
 
 
 
