@@ -115,11 +115,11 @@
             text-align: center;
             span{margin-left: 3%;}
         }
-        .ftro-oculto{height: 300px;}
+        .ftro-oculto{height: 0px;}
         ul{
             display: flex;
             flex-flow: column nowrap;
-            height: 0px;
+            height: 300px;
             transition: all 0.5s;
             overflow: hidden;
             align-items: center;

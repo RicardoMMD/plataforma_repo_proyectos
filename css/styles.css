@@ -272,12 +272,12 @@ header {
     margin-left: 3%;
   }
   .colFiltro .ftro-oculto {
-    height: 300px;
+    height: 0px;
   }
   .colFiltro ul {
     display: flex;
     flex-flow: column nowrap;
-    height: 0px;
+    height: 300px;
     transition: all 0.5s;
     overflow: hidden;
     align-items: center;
