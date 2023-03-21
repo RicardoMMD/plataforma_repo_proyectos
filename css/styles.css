@@ -272,7 +272,7 @@ header {
     margin-left: 3%;
   }
   .colFiltro .ftro-oculto {
-    height: 250px;
+    height: 300px;
   }
   .colFiltro ul {
     display: flex;
@@ -281,7 +281,7 @@ header {
     transition: all 0.5s;
     overflow: hidden;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: center;
     overflow: hidden;
   }
   .colFiltro ul li {
