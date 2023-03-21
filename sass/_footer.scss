@@ -3,11 +3,95 @@
     width: 100%;
     min-height: 30px;
     display:flex;
-    align-items: center;
+    align-items: start;
     justify-content: center;
 }
 
 .logo{
     width: 150px;
     margin: 10px 0px;
+    align-self: center;
+}
+
+.conten-footer{
+    /* display: flex;
+    flex-direction: column;
+    align-items: start;
+    justify-content: start; */
+    color: white;
+    width: 150px;
+    margin: 5px 5px;
+    p{
+        font-size: 10px;
+        margin: 5px 0px;
+    }
+    h5{
+        margin-bottom: 5px;
+    }
+
+
+
+
+
+
+    ul {
+        display: flex;
+        margin: 10px;
+        padding: 0px;
+        li {
+            list-style: none;
+            a {
+                width: 35px;
+                height: 35px;
+                background-color: #ffffff;
+                text-align: center;
+                line-height: 10px;
+                font-size: 20px;
+                margin: 0 5px;
+                display: block;
+                border-radius: 50%;
+                position: relative;
+                overflow: hidden;
+                border: 0px solid #858585;
+                z-index: 1;
+                .icon {
+                    position: relative;
+                    color: #262626;
+                    transition: .5s;
+                    z-index: 3;
+                }
+                i{
+                    margin-top: 8px;
+                }
+            }
+            a:hover .icon {
+                color: #ffffff;
+                transform: rotateY(360deg);
+            }
+            a:before {
+                content: "";
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                background: #f00;
+                transition: .5s;
+                z-index: 2;
+            }
+            a:hover:before {
+                top: 0;
+            }
+        }
+        .web a:before{background: #9815e9;}
+        .twit a:before{background: #55acee;}
+        .linked a:before{background: #0e76a8;}
+        .beh a:before {background: black;}
+        .insta a:before {background: #F65202;}
+        .github a:before{background: #464646;}
+        .tele a:before{background: #0088cc;}
+        .tableau a:before{background: #747474;}
+        .you a:before{background: #FF0000;}
+        .face a:before{background: #4267B2;}
+    }
 }

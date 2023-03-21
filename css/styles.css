@@ -677,13 +677,111 @@ section h2 {
   width: 100%;
   min-height: 30px;
   display: flex;
-  align-items: center;
+  align-items: start;
   justify-content: center;
 }
 
 .logo {
   width: 150px;
   margin: 10px 0px;
+  align-self: center;
+}
+
+.conten-footer {
+  /* display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: start; */
+  color: white;
+  width: 150px;
+  margin: 5px 5px;
+}
+.conten-footer p {
+  font-size: 10px;
+  margin: 5px 0px;
+}
+.conten-footer h5 {
+  margin-bottom: 5px;
+}
+.conten-footer ul {
+  display: flex;
+  margin: 10px;
+  padding: 0px;
+}
+.conten-footer ul li {
+  list-style: none;
+}
+.conten-footer ul li a {
+  width: 35px;
+  height: 35px;
+  background-color: #ffffff;
+  text-align: center;
+  line-height: 10px;
+  font-size: 20px;
+  margin: 0 5px;
+  display: block;
+  border-radius: 50%;
+  position: relative;
+  overflow: hidden;
+  border: 0px solid #858585;
+  z-index: 1;
+}
+.conten-footer ul li a .icon {
+  position: relative;
+  color: #262626;
+  transition: 0.5s;
+  z-index: 3;
+}
+.conten-footer ul li a i {
+  margin-top: 8px;
+}
+.conten-footer ul li a:hover .icon {
+  color: #ffffff;
+  transform: rotateY(360deg);
+}
+.conten-footer ul li a:before {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #f00;
+  transition: 0.5s;
+  z-index: 2;
+}
+.conten-footer ul li a:hover:before {
+  top: 0;
+}
+.conten-footer ul .web a:before {
+  background: #9815e9;
+}
+.conten-footer ul .twit a:before {
+  background: #55acee;
+}
+.conten-footer ul .linked a:before {
+  background: #0e76a8;
+}
+.conten-footer ul .beh a:before {
+  background: black;
+}
+.conten-footer ul .insta a:before {
+  background: #F65202;
+}
+.conten-footer ul .github a:before {
+  background: #464646;
+}
+.conten-footer ul .tele a:before {
+  background: #0088cc;
+}
+.conten-footer ul .tableau a:before {
+  background: #747474;
+}
+.conten-footer ul .you a:before {
+  background: #FF0000;
+}
+.conten-footer ul .face a:before {
+  background: #4267B2;
 }
 
 body {
