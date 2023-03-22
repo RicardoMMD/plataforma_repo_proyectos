@@ -58,3 +58,13 @@ header{
 @media(min-width: 880px){
     .bkgn-sub-principal{height: 230px;}
 }
+@media(max-width: 477px){
+    .conten-titulo-principal{
+        h1{
+            @include titulos(45px, #fff)
+        }
+        .titulos-secundarios{
+            @include titulos(40px,#fff)
+        }
+    }
+}

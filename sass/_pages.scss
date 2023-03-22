@@ -65,7 +65,13 @@ section{
     color: black;
 }
 
-
+.yt-center-video{
+    text-align: center;
+    iframe{
+        width: 80%;
+        height: 40vw;
+    }
+}
 
 .visual-img{
     text-align: center;
@@ -74,4 +80,21 @@ section{
 
 .tableauPlaceholder{
     box-shadow: 2px 2px 5px 2px #d8d8d8;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:478px){
+    
 }

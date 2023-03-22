@@ -62,3 +62,27 @@ $color-titulo-detalle: #9f9f9f;
     }
 }
 
+
+
+
+@media screen and (max-width:478px){
+    .item-detalles{
+        background-color: #f3f3f0;
+        border-radius: 10px;
+        flex-direction: column;
+        /* margin-bottom: 3vh; */
+        gap: 1vh;
+        color: #5d5d5d;
+
+        .titulo-detalle{
+            justify-content: center;
+        }
+        .valor-detalle{
+            width: 200px;
+            justify-content: center;
+            ul{
+                margin: 0px;
+            }
+        }
+    }
+}

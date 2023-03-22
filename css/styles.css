@@ -62,6 +62,20 @@ header {
     height: 230px;
   }
 }
+@media (max-width: 477px) {
+  .conten-titulo-principal h1 {
+    font-family: "Roboto Slab";
+    color: #fff;
+    font-size: 45px;
+    margin: 0px;
+  }
+  .conten-titulo-principal .titulos-secundarios {
+    font-family: "Roboto Slab";
+    color: #fff;
+    font-size: 40px;
+    margin: 0px;
+  }
+}
 .card {
   width: 280px;
   margin: 10px;
@@ -124,10 +138,6 @@ header {
   font-size: 12px;
   line-height: 1.8;
   text-align: start;
-}
-
-.yt-center-video {
-  text-align: center;
 }
 
 .by {
@@ -354,6 +364,14 @@ section h2 {
   font-weight: bold;
   cursor: pointer;
   color: black;
+}
+
+.yt-center-video {
+  text-align: center;
+}
+.yt-center-video iframe {
+  width: 80%;
+  height: 40vw;
 }
 
 .visual-img {
@@ -686,6 +704,26 @@ section h2 {
   font-weight: bold;
 }
 
+@media screen and (max-width: 478px) {
+  .item-detalles {
+    background-color: #f3f3f0;
+    border-radius: 10px;
+    flex-direction: column;
+    /* margin-bottom: 3vh; */
+    gap: 1vh;
+    color: #5d5d5d;
+  }
+  .item-detalles .titulo-detalle {
+    justify-content: center;
+  }
+  .item-detalles .valor-detalle {
+    width: 200px;
+    justify-content: center;
+  }
+  .item-detalles .valor-detalle ul {
+    margin: 0px;
+  }
+}
 .video-carousel {
   background-color: #e4e4e4;
   border-radius: 5px;
