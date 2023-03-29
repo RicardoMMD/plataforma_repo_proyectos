@@ -45,9 +45,10 @@
                 height: 35px;
                 background-color: #ffffff;
                 text-align: center;
-                line-height: 10px;
+                line-height: 5px;
                 font-size: 20px;
                 margin: 0 5px;
+                margin-bottom: 5px;
                 display: block;
                 border-radius: 50%;
                 position: relative;
@@ -61,7 +62,7 @@
                     z-index: 3;
                 }
                 i{
-                    margin-top: 8px;
+                    margin-top: 7px;
                 }
             }
             a:hover .icon {

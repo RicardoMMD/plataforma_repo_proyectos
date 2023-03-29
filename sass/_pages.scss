@@ -42,27 +42,29 @@ section{
 }
 
 .return-btn{
-    font-size: 10px;
+    font-size: 12px;
     display:flex;
     align-items: center;
     height: 35px;
-    width: 19px;
+    /* width: 19px; */
+    font-weight: bold;
     padding: 0px 7px;
     gap: 7px;
-    background-color: #e5e5e5;
+    background-color: #d8d8d8;
+    /* box-shadow: 2px 2px 5px 2px #e6e6e6; */
     border-radius: 5px;
     float: right;
-    color: black;
+    color: #3a3a3a;
     position:absolute;
     right: 18px;
     top: 12px;
 
 }
 .return-btn:hover{
-    background-color: #cdcdcd;
+    background-color: #7d7d7d;
     font-weight: bold;
     cursor: pointer;
-    color: black;
+    color: #f8f8f8;
 }
 
 .yt-center-video{
