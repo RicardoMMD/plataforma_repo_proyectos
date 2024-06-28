@@ -26,15 +26,16 @@ header {
 }
 
 .bkgn-sub-principal {
-  filter: brightness(0.5);
   position: relative;
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0px;
   width: 100%;
   height: 400px;
   opacity: 1;
-  object-position: 25% 40%;
+  -o-object-position: 25% 40%;
+     object-position: 25% 40%;
 }
 
 .margen {
@@ -317,12 +318,14 @@ section h2 {
 
 .bkgn-sub {
   display: block;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 0px;
   width: 100%;
   height: 25vh;
   opacity: 1;
-  object-position: 20% 60%;
+  -o-object-position: 20% 60%;
+     object-position: 20% 60%;
 }
 
 .migas {
@@ -371,10 +374,10 @@ section h2 {
 
 .yt-center-video {
   text-align: center;
-  /*iframe{
-      width: 80%;
-      height: auto;
-  }*/
+}
+.yt-center-video iframe {
+  width: 80%;
+  height: 40vw;
 }
 
 .visual-img {
@@ -418,14 +421,18 @@ section h2 {
 .team-card .card-img {
   width: 100%;
   height: 11rem;
-  object-fit: cover;
-  object-position: 0% 90%;
-  clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 60%);
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 0% 90%;
+     object-position: 0% 90%;
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 60%);
+          clip-path: polygon(0 0, 100% 0, 100% 60%, 0% 60%);
 }
 .team-card .profile-img {
   width: 6rem;
   height: 6rem;
-  object-fit: cover;
+  -o-object-fit: cover;
+     object-fit: cover;
   border-radius: 50%;
   margin-top: -10rem;
   z-index: 999;
@@ -918,7 +925,7 @@ hr {
 }
 
 .conten-consept {
-  margin: 3% 5%;
+  margin: 5% 5%;
   text-align: justify;
   font-family: "Roboto Slab";
 }
@@ -1002,7 +1009,7 @@ hr {
 }
 
 .descrip24-bk4 {
-  background-image: url("../img/hackaton_24.jpg");
+  background-image: url("../img/mini_img_h24/4.png");
 }
 
 .descrip24-bk5 {
@@ -1022,7 +1029,7 @@ hr {
 }
 
 .descrip24-bk9 {
-  background-image: url("../img/mini_img_h24/9.jpg");
+  background-image: url("../img/mini_img_h24/9.png");
 }
 
 .descrip24-bk10 {
@@ -1034,7 +1041,7 @@ hr {
 }
 
 .descrip24-bk12 {
-  background-image: url("../img/mini_img_h24/12.jpg");
+  background-image: url("../img/mini_img_h24/12.png");
 }
 
 .descrip24-bk13 {
@@ -1050,11 +1057,11 @@ hr {
 }
 
 .descrip24-bk16 {
-  background-image: url("../img/hackaton_24.jpg");
+  background-image: url("../img/mini_img_h24/16.png");
 }
 
 .descrip24-bk17 {
-  background-image: url("../img/mini_img_h24/17.jpg");
+  background-image: url("../img/mini_img_h24/17.png");
 }
 
 .descrip24-bk18 {
@@ -1073,15 +1080,9 @@ hr {
   background-image: url("../img/mini_img_h24/21.png");
 }
 
-.descrip24-bk22 {
-  background-image: url("../img/hackaton_24.jpg");
-}
-
 @media (min-width: 800px) {
   .conten-consept {
-    margin: 5% 10%;
+    margin: 5% 13%;
   }
 }
-/*  Importamos fuentes de Google ---------------------------------------------  */
-
-/*# sourceMappingURL=styles.css.map */
+/*  Importamos fuentes de Google ---------------------------------------------  *//*# sourceMappingURL=styles.css.map */
