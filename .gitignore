@@ -3,7 +3,7 @@
 *.css.map
 *.docx
 *.pdf
-*.jpg
+.jpg
 *.mp4
 
 # Ignorar los archivos JS generados
