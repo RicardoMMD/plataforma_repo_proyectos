@@ -1,8 +1,26 @@
 {
   "devDependencies": {
-    "sass": "^1.58.3"
+    "sass": "^1.89.2"
   },
   "dependencies": {
     "jquery": "^3.6.4"
-  }
+  },
+  "name": "plataforma_hackaton",
+  "version": "1.0.0",
+  "description": "Pagina web cuyo objetivo es reunir todos los proyectos del Datatón sobre Niñez y Adolescencia celebrado por REDIM, para facilitar el acceso a su visualización e información.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RicardoMMD/plataforma_repo_proyectos.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RicardoMMD/plataforma_repo_proyectos/issues"
+  },
+  "homepage": "https://github.com/RicardoMMD/plataforma_repo_proyectos#readme"
 }

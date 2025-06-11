@@ -1077,6 +1077,27 @@ hr {
   background-image: url("../img/hackaton_24.jpg");
 }
 
+/* Hackaton 2025 */
+.descrip25-bk1 {
+  background-image: url("../img/portadas_2025/8.png"); /* Robotin */
+}
+
+.descrip25-bk2 {
+  background-image: url("../img/portadas_2025/6.png"); /* Hilos de vida */
+}
+
+.descrip25-bk3 {
+  background-image: url("../img/portadas_2025/5.png"); /* Infancias en Guanajuato */
+}
+
+.descrip25-bk4 {
+  background-image: url("../img/portadas_2025/14.png"); /* JUCONI */
+}
+
+.descrip25-bk5 {
+  background-image: url("../img/portadas_2025/2.png"); /* Historias que Importan */
+}
+
 @media (min-width: 800px) {
   .conten-consept {
     margin: 5% 10%;
