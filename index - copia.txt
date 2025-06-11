@@ -78,8 +78,8 @@
         <div class="tab-content" id="myTabContent">
 
             <!-- Hackatón 2025 -->
-            <div class="tab-pane fade show active" id="hackaton2025-tab-pane" role="tabpanel" aria-labelledby="hackaton2025-tab" tabindex="0">
-                <img width="100%" src="./img/logos/logos_24.png" alt="Portada Presentación de proyectos: 4o Hackatón 2025">
+            <div class="tab-pane fade" id="hackaton2025-tab-pane" role="tabpanel" aria-labelledby="hackaton2025-tab" tabindex="0">
+                <img width="100%" src="./img/logos/logos_24.png" alt="Logos de participantes Hackatón 2025">
                 <div class = 'tarjetero'>
                     <div class = 'tituloConten'>
                         <div class = 'vistaConten'>
@@ -87,7 +87,7 @@
                             <span>Galería</span>
                         </div>
                         <hr>
-                        <div class = 'tituloTextConten'>Proyectos finalizados</div>
+                        <div class = 'tituloTextConten'>Proyectos (Próximamente)</div>
                     </div>
                     <div class="contenBody">
                         <aside class = 'colFiltro'>
@@ -96,6 +96,7 @@
                                 <i class="fa-solid fa-list "></i>
                             </div>
                             <ul class="side-ul ftro-oculto">
+                                <!-- Actualiza estas categorías según sea necesario para 2025 -->
                                 <li class="filter-btn" data-category="ia_etica">IA y Ética</li>
                                 <li class="filter-btn" data-category="datos_abiertos">Datos Abiertos</li>
                                 <li class="filter-btn" data-category="salud_digital">Salud Digital</li>
@@ -105,112 +106,48 @@
                             </ul>
                         </aside>
                         <div class = 'conten-cards-1'>
-                            
-                            <!-- Proyecto 1: Robotin (1er lugar) -->
-                            <div class = 'card' data-categories='["ia_etica", "datos_abiertos"]'>
-                                <a href="pages/hackaton_2025/robotin_ia.html" target="_blank">
-                                    <div class = 'descrip descrip25-bk1'></div>
+                            <!-- Ejemplo de Tarjeta 1 para Hackatón 2025 -->
+                            <div class = 'card' data-categories='["ia_etica", "educacion_futuro"]'>
+                                <a href="#"> <!-- Enlace al proyecto futuro -->
+                                    <div class = 'descrip descrip25-bk1'></div> <!-- Necesitarás CSS para descrip25-bk1 -->
                                     <div class = 'descriptCard'>
                                         <div class = 'tituloCard'>
                                             <div class = 'tituloText'>
-                                                Robotin: Visualización de datos con IA para infancias y adolescencias
+                                                Proyecto Innovador IA en Educación 2025 (Ejemplo)
                                             </div>
                                         </div>
                                         <div class = 'equipoText'>
-                                            <span class = 'by'>Equipo:</span>
-                                            Jésica Tapia, Benjamin Oliva, Rosa Amador
+                                            <span class = 'by'>Equipo</span> <!-- Usando span como sugerido -->
+                                            Equipo Alfa (Próximamente)
                                         </div>
                                         <div class = 'equipoText'>
-                                            <span class = 'tem'>Etiqueta:</span> IA y Ética, Datos Abiertos
+                                            <span class = 'tem'>Etiqueta</span> IA y Ética, Educación del Futuro
                                         </div>
                                     </div>
                                 </a>
                             </div>
 
-                            <!-- Proyecto 2: Hilos de vida (2o lugar) -->
-                            <div class = 'card' data-categories='["salud_digital", "inclusion_digital"]'>
-                                <a href="pages/hackaton_2025/hilos_vida.html" target="_blank">
-                                    <div class = 'descrip descrip25-bk2'></div>
+                            <!-- Ejemplo de Tarjeta 2 para Hackatón 2025 -->
+                            <div class = 'card' data-categories='["datos_abiertos"]'>
+                                <a href="#"> <!-- Enlace al proyecto futuro -->
+                                    <div class = 'descrip descrip25-bk2'></div> <!-- Necesitarás CSS para descrip25-bk2 -->
                                     <div class = 'descriptCard'>
                                         <div class = 'tituloCard'>
                                             <div class = 'tituloText'>
-                                                Hilos de vida. Suicidio adolescente en comunidades indígenas
+                                                Plataforma de Datos Abiertos para la Niñez (Ejemplo)
                                             </div>
                                         </div>
                                         <div class = 'equipoText'>
-                                            <span class = 'by'>Equipo:</span>
-                                            Diana Paola Pérez Rodríguez, David Emigdio Andrade Hidalgo y Costilla, Edna Cecilia Hernández Soriano, Sergio Oscar Navarro Montalvo, Paola Cervantes Gómez
+                                            <span class = 'by'>Equipo</span>
+                                            Equipo Beta (Próximamente)
                                         </div>
                                         <div class = 'equipoText'>
-                                            <span class = 'tem'>Etiqueta:</span> Salud Digital, Inclusión Digital
+                                            <span class = 'tem'>Etiqueta</span> Datos Abiertos
                                         </div>
                                     </div>
                                 </a>
                             </div>
-
-                            <!-- Proyecto 3: Infancias en Guanajuato (3er lugar) -->
-                            <div class = 'card' data-categories='["salud_digital", "datos_abiertos"]'>
-                                <a href="pages/hackaton_2025/infancias_guanajuato.html" target="_blank">
-                                    <div class = 'descrip descrip25-bk3'></div>
-                                    <div class = 'descriptCard'>
-                                        <div class = 'tituloCard'>
-                                            <div class = 'tituloText'>
-                                                Infancias en Guanajuato: Una revisión de lesiones a adolescentes de 2021 a 2024
-                                            </div>
-                                        </div>
-                                        <div class = 'equipoText'>
-                                            <span class = 'by'>Equipo:</span>
-                                            Alejandra Sánchez Lule, Oscar de la Cruz Echeveste, Saúl Salvador Tinajero Chávez, Karen Gonzalo Celedonio, Abdiel Ulises Beltrán Aranda, Daniel Alejandro Cervantes Abundiz, Lourdes Araceli Waldo Benítez
-                                        </div>
-                                        <div class = 'equipoText'>
-                                            <span class = 'tem'>Etiqueta:</span> Salud Digital, Datos Abiertos
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Proyecto 4: JUCONI (Mención Honorífica) -->
-                            <div class = 'card' data-categories='["datos_abiertos", "inclusion_digital"]'>
-                                <a href="pages/hackaton_2025/seguimiento_juconi.html" target="_blank">
-                                    <div class = 'descrip descrip25-bk4'></div>
-                                    <div class = 'descriptCard'>
-                                        <div class = 'tituloCard'>
-                                            <div class = 'tituloText'>
-                                                Aplicación de Seguimiento Familiar JUCONI
-                                            </div>
-                                        </div>
-                                        <div class = 'equipoText'>
-                                            <span class = 'by'>Equipo:</span>
-                                            Ricardo Miguel Maldonado Domínguez, Julio Cesar García Benítez
-                                        </div>
-                                        <div class = 'equipoText'>
-                                            <span class = 'tem'>Etiqueta:</span> Datos Abiertos, Inclusión Digital
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
-                            <!-- Proyecto 5: Historias que Importan (Mención Honorífica) -->
-                            <div class = 'card' data-categories='["salud_digital"]'>
-                                <a href="pages/hackaton_2025/historias_que_importan.html" target="_blank">
-                                    <div class = 'descrip descrip25-bk5'></div>
-                                    <div class = 'descriptCard'>
-                                        <div class = 'tituloCard'>
-                                            <div class = 'tituloText'>
-                                                Historias que Importan, El derecho a decidir en Hidalgo
-                                            </div>
-                                        </div>
-                                        <div class = 'equipoText'>
-                                            <span class = 'by'>Equipo:</span>
-                                            Zyanya Vanessa Valencia Miranda, Isis Alondra Franco Villarreal, Chigeira María de la Rosa Almánzar
-                                        </div>
-                                        <div class = 'equipoText'>
-                                            <span class = 'tem'>Etiqueta:</span> Salud Digital
-                                        </div>
-                                    </div>
-                                </a>
-                            </div>
-
+                            <!-- Agrega más tarjetas de proyectos para 2025 aquí -->
                         </div>
                     </div>
                 </div>
@@ -218,7 +155,7 @@
 
 
             <!-- Hackatón 2024 -->
-            <div class="tab-pane fade " id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+            <div class="tab-pane fade show active" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
                 <img width="100%" src="./img/logos/logos_24.png" alt="logos de participantes datatón">
                 <div class = 'tarjetero'>
                     <div class = 'tituloConten'>
